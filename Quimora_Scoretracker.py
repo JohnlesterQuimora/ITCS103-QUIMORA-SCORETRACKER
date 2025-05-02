@@ -1,4 +1,5 @@
 # QUIMORA,JOHN LESTER Z BSIT 1-C
+#QUIZ4
 
 import tkinter as tk
 from tkinter import messagebox
@@ -27,7 +28,9 @@ def validate_inputs():
     return True
 
 def grade_letter(grade):
-    if 95 <= grade <= 100:
+    if grade > 100:
+        return "Invalid"
+    elif grade >= 95:
         return "Passed"
     elif grade >= 90:
         return "Passed"
